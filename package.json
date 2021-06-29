@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-uploadfile",
+  "version": "1.0.0",
+  "description": "Uploadfile with multer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/du-disk/nodejs-uploadfile.git"
+  },
+  "keywords": [
+    "nodejs",
+    "upload",
+    "multer"
+  ],
+  "author": "Dudi Iskandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/du-disk/nodejs-uploadfile/issues"
+  },
+  "homepage": "https://github.com/du-disk/nodejs-uploadfile#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fastest-validator": "^1.11.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.8"
+  }
+}
