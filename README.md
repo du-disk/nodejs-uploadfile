@@ -45,7 +45,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Installation Guide
 
-    $ git clone https://github.com/du-disk/nodejs-uploadfile#readme
+    $ git clone https://github.com/du-disk/nodejs-uploadfile
     $ cd nodejs-uploadfile
     $ npm install
 
