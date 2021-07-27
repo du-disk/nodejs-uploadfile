@@ -6,7 +6,7 @@
 
 const fs = require('fs')
 
-const DIRUPLOAD = process.env.DIRUPLOAD || '/public/uploaded/'
+const DIRUPLOAD = process.env.DIRUPLOAD || 'public/uploaded/'
 
 module.exports = {
     upload_single: {
@@ -14,6 +14,8 @@ module.exports = {
             const dir = DIRUPLOAD
             //create new directory if it doesnt exists
             req.dirupload = dir
+            console.log(fs.existsSync(dir))
+            console.log(__dirname)
             if (!fs.existsSync(dir)) await fs.mkdirSync(dir, { recursive: true });
             cb(null, dir)
         },
