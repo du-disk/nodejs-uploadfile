@@ -31,6 +31,7 @@ app.use('/ping', (req, res) => {
     })
 })
 app.use('/public/upload/', express.static(path.resolve('./public/upload')))
+app.use('/public/uploaded/', express.static(path.resolve('./public/uploaded')))
 
 app.listen(PORT || 4000, function () {
     console.log('Server running on port:', PORT, 'at', new Date())
