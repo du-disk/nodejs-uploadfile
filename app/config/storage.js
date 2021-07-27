@@ -6,7 +6,7 @@
 
 const fs = require('fs')
 
-const DIRUPLOAD = process.env.DIRUPLOAD || 'public/uploaded/'
+const DIRUPLOAD = process.env.DIRUPLOAD || '/public/uploaded/'
 
 module.exports = {
     upload_single: {
